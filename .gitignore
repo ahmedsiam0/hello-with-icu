@@ -21,7 +21,8 @@ test-driver
 /libtool
 /ltmain.sh
 /missing
-
+/config.h
+/config.h.in
 /config.log
 /INSTALL
 Makefile
@@ -32,3 +33,5 @@ Makefile.in
 /*.pc
 *.res
 /src/hello_with_icu
+.vscode
+stamp-h1

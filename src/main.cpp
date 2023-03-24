@@ -3,10 +3,9 @@
 #include <unicode/resbund.h>
 #include <unicode/locid.h>
 #include <unicode/msgfmt.h>
+#include <config.h>
 
-#define LOCALES_DIR "./../share/hello_with_icu/locales"
-
-int main() {
+int main(int argc, char* argv[]) {
     UErrorCode status1 = U_ZERO_ERROR;
     UErrorCode status2 = U_ZERO_ERROR;
 
@@ -15,6 +14,7 @@ int main() {
     icu::Locale system_local {};
 
     icu::ResourceBundle resource_bundle(LOCALES_DIR, system_local.getName(), status1);
+
     if (!U_SUCCESS(status1)) {
         std::cout << "Error in accessing locales directory!" << std::endl;
         return 1;
