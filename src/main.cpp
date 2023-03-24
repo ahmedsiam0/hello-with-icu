@@ -1,5 +1,3 @@
-#include <config.h>
-
 #include <iostream>
 #include <unicode/ustream.h>
 #include <unicode/resbund.h>
