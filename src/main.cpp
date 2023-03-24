@@ -1,9 +1,10 @@
+#include <config.h>
+
 #include <iostream>
 #include <unicode/ustream.h>
 #include <unicode/resbund.h>
 #include <unicode/locid.h>
 #include <unicode/msgfmt.h>
-#include <config.h>
 
 int main(int argc, char* argv[]) {
     UErrorCode status1 = U_ZERO_ERROR;
